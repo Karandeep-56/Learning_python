@@ -191,3 +191,10 @@ for n in numbers:
     squares.append(square(n))
 
 print(squares)
+
+def is_even(num):
+    return num % 2 ==0
+
+even_numbers = [n for n in numbers if is_even(n)]
+
+print('even numbers,', even_numbers)
