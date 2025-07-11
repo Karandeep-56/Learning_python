@@ -47,7 +47,9 @@ print("fruits one by one:")
 for fruits in fruits:
     print("fruit itering,", fruits)
 
-print 
+print ("fruit in uppercase")
+for fruits in fruits:
+    print(fruits.upper())
 
 
 
