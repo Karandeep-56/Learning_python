@@ -120,3 +120,8 @@ for subj in range(num_subjects):
 #flattening a list into a single list
 all_scores = [score for student in scores for score in student]
 print(all_scores)
+
+#highest score in list
+
+highest = max(all_scores)
+print("highest score among all students", highest)
