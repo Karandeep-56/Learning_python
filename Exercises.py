@@ -117,3 +117,6 @@ for subj in range(num_subjects):
     avg = total/ num_students
     print(f"subject{subj+1} average: {round(avg, 2)}")
 
+#flattening a list into a single list
+all_scores = [score for student in scores for score in student]
+print(all_scores)
