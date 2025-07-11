@@ -78,21 +78,14 @@ print("initial scores," ,scores)
 
 #printing scores of student 1 in subject 2
 print(scores[0][1])
+print(scores[2][2])
 
+print("all scores row by row")
+for student_scores in scores:
+    print(student_scores)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# printing each student score in tabular form
+print("student scores row by row")
+for i, student_scores in enumerate(scores):
+  for j, score in enumerate(student_scores):
+      print(f"student{i+2}:subject{j+2},{score}")
