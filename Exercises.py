@@ -12,4 +12,8 @@ print('first fruit', fruits[0])
 print("last fruit", fruits[-1])
 print("second and third fruit",fruits[1:3])
 
+fruits[2] = "kela"
+
+print(fruits)
+
 
