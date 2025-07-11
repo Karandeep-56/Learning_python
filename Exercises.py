@@ -168,3 +168,26 @@ def divide(a,b):
     return a/b
 
 print("division", divide(12,7))
+
+
+#function with default parameters
+def greet_city(name, city = "vancouver"):
+    print(f"{name}, lives in {city}")
+
+greet_city("karan", "Punjab")
+
+def introduce(name, age = 25):
+    print(f"my name is {name} and i am {age} years old")
+
+introduce("karan", 24)
+
+def square(n):
+    return [n*n]
+
+numbers = [1,2,3,4,5]
+squares= []
+
+for n in numbers:
+     squares.append(square(n))
+
+print('square of numbers', squares)
