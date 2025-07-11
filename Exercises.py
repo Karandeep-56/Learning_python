@@ -125,3 +125,22 @@ print(all_scores)
 
 highest = max(all_scores)
 print("highest score among all students", highest)
+
+
+#creating first function
+def great():
+   print("hello, nice to see you")
+
+great()
+
+def welcome_user():
+    print("welcome to ACA")
+welcome_user()
+
+name = "karandeep Singh"
+
+def great(name):
+    print(f" welcome,{name}! nice to see you")
+great(name)
+
+great("karan")
