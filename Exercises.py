@@ -157,3 +157,14 @@ def substract(a,b):
 
 substract(12, 8)
 
+def multiply(a,b):
+    return a* b
+my_age = multiply(2,3)
+print("my age", my_age)
+
+def divide(a,b):
+    if b==0:
+       return "error cannot divide by zero"
+    return a/b
+
+print("division", divide(12,7))
