@@ -144,3 +144,16 @@ def great(name):
 great(name)
 
 great("karan")
+
+#function with multiple parameters
+def adding(a,b):
+    result = a + b
+    print(f"sum of {a} and {b} is {result}")
+adding(10,5)
+
+def substract(a,b):
+    result = a - b
+    print(f"substract {a} and {b} is {result}")
+
+substract(12, 8)
+
