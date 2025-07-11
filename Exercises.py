@@ -42,6 +42,13 @@ print("reverse_sorted_frutis", reverse_sorting)
 
 print("original list", fruits)
 
+#itering over a list
+print("fruits one by one:")
+for fruits in fruits:
+    print("fruit itering,", fruits)
+
+print 
+
 
 
 
