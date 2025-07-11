@@ -69,6 +69,13 @@ def discount_price(prices, discount):
 discount_10 = discount_price(prices,10)
 print("price after 10% discount", discount_10)
 
+scores = [
+    [85,92,78],  #student 1
+    [76,88,90], #student 2
+    [90,91,95]  # student 3
+]
+print("initial scores," ,scores)
+
 
 
 
