@@ -18,6 +18,9 @@ index_apple = fruits.index("apple")
 fruits[index_apple] ='watermelon'
 print(fruits)
 
+#adding something at first place
+fruits.insert(0, "lemon")
+print("adding lemon on first place",fruits)
 
 
 
@@ -25,7 +28,11 @@ print(fruits)
 
 
 
-#(index_cherry = fruits.index("cherry"
-# fruits[index_cherry] = "pineapple" print("After changing 'cherry' to 'pineapple':", fruits)
+
+
+
+
+
+
 
 
