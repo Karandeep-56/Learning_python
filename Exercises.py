@@ -51,6 +51,29 @@ print ("fruit in uppercase")
 for fruits in fruits:
     print(fruits.upper())
 
+fruit_length = [len(fruits) for fruits in fruits]
+print( fruit_length)
+
+# fruits list with the letter containing E
+fruit_with_e = [fruits for fruits in fruits if 'o' in fruits]
+print(fruit_with_e)
+
+#qns
+prices = [20,30,50, 100,80]
+
+def discount_price(prices, discount):
+    """apply a discount % to each price."""
+    discounted = [round(price * (1 - discount/100), 2) for price in prices]
+    return discounted
+
+discount_10 = discount_price(prices,10)
+print("price after 10% discount", discount_10)
+
+
+
+
+
+
 
 
 
