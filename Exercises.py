@@ -188,6 +188,6 @@ numbers = [1,2,3,4,5]
 squares= []
 
 for n in numbers:
-     squares.append(square(n))
+    squares.append(square(n))
 
-print('square of numbers', squares)
+print(squares)
