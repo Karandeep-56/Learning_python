@@ -12,8 +12,20 @@ print('first fruit', fruits[0])
 print("last fruit", fruits[-1])
 print("second and third fruit",fruits[1:3])
 
-fruits[2] = "kela"
+fruits[2] = "strawberry"
 
+index_apple = fruits.index("apple")
+fruits[index_apple] ='watermelon'
 print(fruits)
+
+
+
+
+
+
+
+
+#(index_cherry = fruits.index("cherry"
+# fruits[index_cherry] = "pineapple" print("After changing 'cherry' to 'pineapple':", fruits)
 
 
