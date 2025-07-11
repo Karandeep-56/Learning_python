@@ -76,6 +76,8 @@ scores = [
 ]
 print("initial scores," ,scores)
 
+#printing scores of student 1 in subject 2
+print(scores[0][1])
 
 
 
