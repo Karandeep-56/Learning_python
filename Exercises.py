@@ -89,3 +89,15 @@ print("student scores row by row")
 for i, student_scores in enumerate(scores):
   for j, score in enumerate(student_scores):
       print(f"student{i+2}:subject{j+2},{score}")
+
+#adding another student scores
+scores.append([88,79,85])  #student 4
+print(scores)
+
+scores.append([70,80,90])
+print(scores)
+
+scores[1][0] = 95
+print("scores after updating",scores)
+scores[4][1] = 82
+print("updated scores of fifth student,",scores)
