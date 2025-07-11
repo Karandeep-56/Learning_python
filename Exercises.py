@@ -101,3 +101,9 @@ scores[1][0] = 95
 print("scores after updating",scores)
 scores[4][1] = 82
 print("updated scores of fifth student,",scores)
+
+#priting average of students
+print("average of students")
+for i, student_scores in enumerate(scores):
+    avg = sum(student_scores) / len(student_scores)
+    print(f"student:{i+1}, average : {round(avg, 2)}")
