@@ -22,6 +22,13 @@ print(fruits)
 fruits.insert(0, "lemon")
 print("adding lemon on first place",fruits)
 
+#removing fruit from list
+fruits.remove("banana")
+print("after removing banana", fruits)
+popped_fruits = fruits.pop()
+print("removing last item", popped_fruits)
+
+
 
 
 
