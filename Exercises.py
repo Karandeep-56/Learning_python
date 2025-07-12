@@ -241,6 +241,12 @@ Karan_GPA = 3.56654
 print("default round:", round(Karan_GPA))
 print("two decimal place:", round(Karan_GPA,2))
 
+#generating a sequence of numbers
+print("list from 1 to 10:", list(range(1,11,2)))
+print("list from 1 to 4", list(range(5)))
+
+print("list from 10 to 0", list(range(10,-1,-1)))
+
 
 
 
