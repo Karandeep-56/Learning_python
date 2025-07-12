@@ -236,6 +236,11 @@ print("y data type:", type(Y))
 z = 165 #in cm
 print("data type of z:", type(z))
 
+#rounding a number
+Karan_GPA = 3.56654
+print("default round:", round(Karan_GPA))
+print("two decimal place:", round(Karan_GPA,2))
+
 
 
 
