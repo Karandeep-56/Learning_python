@@ -206,7 +206,11 @@ print("length of fruits list", len(popped_fruits))
 
 print("length of analytics,", len("analytics"))
 
+#sum up values
+numbers = [1,2,3,4,5]
+print("sum of numbers,", sum(numbers))
 
+print("sum of [1,3,5]:", sum([1,3,5]))
 
 
 
