@@ -247,6 +247,22 @@ print("list from 1 to 4", list(range(5)))
 
 print("list from 10 to 0", list(range(10,-1,-1)))
 
+#printing absolute value (no negative sign )
+print("absolute value of -50,", abs(-50))
+
+print("absolute value of -12.5:", abs(-12.5))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
