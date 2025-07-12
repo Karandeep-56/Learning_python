@@ -252,8 +252,6 @@ print("absolute value of -50,", abs(-50))
 
 print("absolute value of -12.5:", abs(-12.5))
 #input function
-full_name = input("enter your name")
-print("hello!", full_name)
 
 #variable and data types
 
@@ -277,6 +275,15 @@ print("has pet,", has_pet)
 city = "vancouver"
 print(city)
 
+age = 25  # happy birthday
+print("\n new age afte birthday", age)
+
+year_born = 2025-age
+print("birth year", year_born)
+
+#calculate your kids age in five years
+kids_age_in_five_years = num_kids+5 #assume kids age as number of kids
+print("\nkids age in five years", kids_age_in_five_years)
 
 
 
