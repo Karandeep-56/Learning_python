@@ -285,8 +285,12 @@ print("birth year", year_born)
 kids_age_in_five_years = num_kids+5 #assume kids age as number of kids
 print("\nkids age in five years", kids_age_in_five_years)
 
+#string concatenation using variables
+greeting = "hello my name is " + good_name + " and i live in " + city+ "."
 
-
+print(greeting)
+my_into = f"Hello my name is  {name}  and i live in  {city} . i am {age}  years old. i have {num_kids} kid"
+print(my_into)
 
 
 
