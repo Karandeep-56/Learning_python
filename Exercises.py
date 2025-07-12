@@ -251,8 +251,9 @@ print("list from 10 to 0", list(range(10,-1,-1)))
 print("absolute value of -50,", abs(-50))
 
 print("absolute value of -12.5:", abs(-12.5))
-
-
+#input function
+full_name = input("enter your name")
+print("hello!", full_name)
 
 
 
