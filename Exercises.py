@@ -219,6 +219,14 @@ print("min value", min(numbers))
 #Alphabetically max value
 print("max value in fruit list", max(popped_fruits))
 
+#sorting and reverse sorting
+sorted_fruits = sorted(fruits)
+
+print("sorted_fruits", sorted_fruits)
+
+reverse_sorted_fruits = sorted(fruits, reverse = True)
+
+print("reverse_sorted fruits", reverse_sorted_fruits)
 
 
 
