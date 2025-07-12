@@ -255,7 +255,27 @@ print("absolute value of -12.5:", abs(-12.5))
 full_name = input("enter your name")
 print("hello!", full_name)
 
+#variable and data types
 
+good_name = "karandeep Singh"
+age = 24
+height = 1.85 #in meters
+num_kids = 1
+is_student = True
+
+print("name,", good_name)
+print("age,", age)
+print("height", height)
+print("number of kids",num_kids)
+print("student status", is_student)
+
+city = "surrey"
+has_pet = False
+
+print("my city is", city)
+print("has pet,", has_pet)
+city = "vancouver"
+print(city)
 
 
 
