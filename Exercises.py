@@ -198,3 +198,16 @@ def is_even(num):
 even_numbers = [n for n in numbers if is_even(n)]
 
 print('even numbers,', even_numbers)
+
+
+#built in functions
+#get length of any list
+print("length of fruits list", len(popped_fruits))
+
+print("length of analytics,", len("analytics"))
+
+
+
+
+
+
