@@ -228,6 +228,24 @@ reverse_sorted_fruits = sorted(fruits, reverse = True)
 
 print("reverse_sorted fruits", reverse_sorted_fruits)
 
+#find data type of a variable
+x = "karandeep"
+print("x data type:", type(x))
+Y = 3.14
+print("y data type:", type(Y))
+z = 165 #in cm
+print("data type of z:", type(z))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
