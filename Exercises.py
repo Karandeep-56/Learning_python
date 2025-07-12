@@ -212,6 +212,20 @@ print("sum of numbers,", sum(numbers))
 
 print("sum of [1,3,5]:", sum([1,3,5]))
 
+#looking for max and min value
+print("max value,", max(numbers))
+print("min value", min(numbers))
+
+#Alphabetically max value
+print("max value in fruit list", max(popped_fruits))
+
+
+
+
+
+
+
+
 
 
 
