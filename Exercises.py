@@ -292,8 +292,9 @@ print(greeting)
 my_into = f"Hello my name is  {name}  and i live in  {city} . i am {age}  years old. i have {num_kids} kid"
 print(my_into)
 
+print(list(range(0,5)))
 
-
+import practice_pandas_and_numpy as np
 
 
 
