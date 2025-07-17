@@ -52,6 +52,26 @@ m2 = np.array([[4,3],[2,5]])
 product = np.dot(m1,m2)
 print("multiply:\n", product)
 
+#aggregate functions
+stats = np.array([[1,2,3],[4,5,6]])
+print("sum:\n", stats.sum())
+print("mean:\n",stats.mean())
+print("std:\n", stats.std())
+print("min:\n", stats.min())
+print("max:\n", stats.max())
+print("column wise sum:\n", stats.sum(axis = 0))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
