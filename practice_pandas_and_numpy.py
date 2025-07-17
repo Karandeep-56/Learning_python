@@ -28,6 +28,12 @@ reshaped = arr.reshape(3,2)
 print("r",reshaped)
 print("reshaped flattened:\n", reshaped.flatten())
 
+#np.matrix
+matrix = np.array([[10,20,30],[40,50,60]])
+print("matrix:\n", matrix[0,1])
+print("submatrix", matrix[0:1,1:2])
+
+
 
 
 
