@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from numpy.random import exponential
 
-from Exercises import square, squares
+from Exercises import square, squares, fruits
 
 #creating Arrays
 a = np.array([1,2,3])
@@ -67,6 +67,17 @@ mask = data>30
 less = data<=30
 print("data greater than 30:\n", data[mask])
 print("data less than 30:\n", data[less])
+
+#random numbers
+numbering = np.array([6,7,8,9])
+print("random number(0,1):\n", np.random.rand(2,3))
+print("random numbers:\n", np.random.randn(3))
+print("random numbers:\n", np.random.randint(1,10,5))
+
+
+
+
+
 
 
 

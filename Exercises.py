@@ -137,7 +137,7 @@ def welcome_user():
     print("welcome to ACA")
 welcome_user()
 
-name = "karandeep Singh"
+name = "Karandeep Singh"
 
 def great(name):
     print(f" welcome,{name}! nice to see you")
