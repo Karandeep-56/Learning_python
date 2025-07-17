@@ -22,6 +22,13 @@ print("np.arrange", np.arange(1,10,2))
 print("np.linspace", np.linspace(1,10, num = 5))
 print("np.eye", np.eye(3))
 
+#flattening and reshaping
+arr = np.arange(1,7)
+reshaped = arr.reshape(3,2)
+print("r",reshaped)
+print("reshaped flattened:\n", reshaped.flatten())
+
+
 
 
 
