@@ -46,6 +46,11 @@ print("y square\n", np.square(y))
 print("exponential:\n", np.exp(x))
 print("log:\n", np.log(x))
 
+#matrix multiplication
+m1 = np.array([[1,2],[4,5]])
+m2 = np.array([[4,3],[2,5]])
+product = np.dot(m1,m2)
+print("multiply:\n", product)
 
 
 
