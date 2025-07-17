@@ -61,6 +61,22 @@ print("min:\n", stats.min())
 print("max:\n", stats.max())
 print("column wise sum:\n", stats.sum(axis = 0))
 
+#boolean filtering
+data = np.array([10,20,30,35,45,34,46,67])
+mask = data>30
+less = data<=30
+print("data greater than 30:\n", data[mask])
+print("data less than 30:\n", data[less])
+
+
+
+
+
+
+
+
+
+
 
 
 
