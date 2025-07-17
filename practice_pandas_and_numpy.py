@@ -75,6 +75,10 @@ print("random numbers:\n", np.random.randn(3))
 print("random numbers:\n", np.random.randint(1,10,5))
 
 
+#unique, sort and cliping
+print("unique:\n", np.unique([1,2,2,2,3,3,4,4,5,5]))
+print("sorted:\n", np.sort([5,3,1,2,4]))
+print("cliped:\n", np.clip([1,5,10],0,8))
 
 
 
