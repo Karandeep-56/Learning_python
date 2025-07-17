@@ -1,5 +1,8 @@
 import numpy as np
 import pandas as pd
+from numpy.random import exponential
+
+from Exercises import square, squares
 
 #creating Arrays
 a = np.array([1,2,3])
@@ -32,6 +35,24 @@ print("reshaped flattened:\n", reshaped.flatten())
 matrix = np.array([[10,20,30],[40,50,60]])
 print("matrix:\n", matrix[0,1])
 print("submatrix", matrix[0:1,1:2])
+
+#element wise operations
+x = np.array([1,2,3,4])
+y = np.array([4,5,6,7])
+print("x+y", x+y)
+print("x*y:\n", x*y)
+print("squareroot:\n", np.sqrt(x))
+print("y square\n", np.square(y))
+print("exponential:\n", np.exp(x))
+print("log:\n", np.log(x))
+
+
+
+
+
+
+
+
 
 
 
