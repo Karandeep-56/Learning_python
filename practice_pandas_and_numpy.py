@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+
 #creating Arrays
 a = np.array([1,2,3])
 print(a)
@@ -11,4 +13,22 @@ print("print shape", a.shape)
 print("print dimension", a.ndim)
 print("print size", a.size)
 print("print elements", a.dtype)
+
+#special arrays
+print("numpy zeros", np.zeros([2,2]))
+print("numpy ones", np.ones([3,3]))
+print("numpy full", np.full([3,4],5))
+print("np.arrange", np.arange(1,10,2))
+print("np.linspace", np.linspace(1,10, num = 5))
+print("np.eye", np.eye(3))
+
+
+
+
+
+
+
+
+
+
 
