@@ -81,6 +81,22 @@ print("sorted:\n", np.sort([5,3,1,2,4]))
 print("cliped:\n", np.clip([1,5,10],0,8))
 
 
+#mini project analysis
+scores = np.array([
+    [88, 92, 85],        #1
+    [78, 81, 79],      #2
+    [90, 87, 88],      #3
+    [69, 72, 70],    #4
+    [95, 94, 96]      #5
+])
+student_avg = scores.mean(axis = 1)
+test_avg = scores.mean(axis = 0)
+print( "student average:\n", student_avg)
+print("test_avg:\n", test_avg)
+high_performer = scores[student_avg>85]
+
+print("high performer", high_performer)
+
 
 
 
