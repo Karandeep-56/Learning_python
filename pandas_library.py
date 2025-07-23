@@ -30,6 +30,12 @@ print("print row by index\n", df.iloc(0))
 print("older than 30:\n", df[df['age']>30])
 print("filter by name:\n", df[df['name']=='alice'])
 
+#data cleaning
+print("all the null values:\n", df.isnull())
+print("drop all the missing values:\n", df.dropna())
+print("fill all the missing values with 0", df.fillna(0))
+
+
 
 
 
