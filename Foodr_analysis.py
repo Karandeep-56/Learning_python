@@ -1,0 +1,33 @@
+#Foodr analysis with pandas and numpy
+import pandas as pd
+import numpy as np
+import psycopg2
+from sqlalchemy import create_engine
+
+#connecting to postgres with my credentials
+
+db_user = "postgres"
+
+db_pass = "admin"
+
+db_host = "localhost"
+
+db_port = "5432"
+
+db_name = "Foodr"
+
+engine = create_engine(f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}")
+
+print("✅ Connected to the database successfully!")
+
+#load tables into pandas dataframes
+
+meals_df = pd.read_sql("SELECT * FROM MEALS", engine)
+orders_df = pd.read_sql("SELECT * FROM ORDERS", engine)
+stock_df = pd.read_sql("SELECT * FROM STOCK", engine)
+
+print("sample meal data:\n", meals_df.head())
+print("sample orders dara:\n", orders_df.head())
+print("sample stock data:\n", stock_df.head())
+
+
