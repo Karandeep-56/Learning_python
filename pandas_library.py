@@ -11,4 +11,16 @@ data = {
     'age' : [25,30,35],
     'salary' : [2000, 3000, 4000]
 }
-print("data frame", pd.DataFrame(data))
+df = pd.DataFrame(data)
+print("data frame", df)
+
+#printing top and last five rows
+print("top five rows:\n", df.head())
+print("top bottom five rows:\n", df.tail())
+
+
+
+
+
+
+

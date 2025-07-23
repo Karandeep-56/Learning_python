@@ -1,8 +1,8 @@
 import numpy as np
-import pandas as pd
-from numpy.random import exponential
 
-from Exercises import square, squares, fruits
+#from numpy.random import exponential
+
+#from Exercises import square, squares, fruits
 
 #creating Arrays
 a = np.array([1,2,3])
@@ -96,41 +96,6 @@ print("test_avg:\n", test_avg)
 high_performer = scores[student_avg>85]
 
 print("high performer", high_performer)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
