@@ -17,6 +17,14 @@ print("data frame", df)
 #printing top and last five rows
 print("top five rows:\n", df.head())
 print("top bottom five rows:\n", df.tail())
+print(df.info)
+
+#selecting column and rows
+print( "column by name:\n", df['name'])
+print("column by name:\n", df[['name','age']])
+print("row by label:\n", df.loc(0))
+print("print row by index\n", df.iloc(0))
+
 
 
 
