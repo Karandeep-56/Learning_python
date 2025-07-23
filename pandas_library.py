@@ -45,6 +45,10 @@ print("group by salary:\n", df.groupby('name')['salary'].sum())
 #mean salary
 print("mean of salary", df['salary'].mean())
 
+#sorting and indexing
+print("sorting age from a to z:\n", df.sort_values('years'))
+df.set_index('name', inplace = True)
+print("indexed data", df)
 
 
 
