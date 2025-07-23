@@ -84,6 +84,12 @@ stock_vs_orders['leftover'] = stock_vs_orders['stocked']- stock_vs_orders['order
 
 print( 'stock where leftover is negative:\n', (stock_vs_orders[stock_vs_orders['leftover']<0]))
 
+#daily revenue
+daily_revenue = orders_df.groupby('order_date')['total_price'].sum().reset_index()
+
+daily_revenue["7 day avg"] = daily_revenue['total_price'].rolling(window = 7).mean()
+print(daily_revenue.tail(10))
+
 
 
 
