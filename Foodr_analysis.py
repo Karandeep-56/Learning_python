@@ -70,3 +70,21 @@ profit_by_eatery = orders_df.merge(meals_df[['meal_id', 'eatery']], on = 'meal_i
 .groupby("eatery")["profit"].sum().sort_values(ascending=False).reset_index()
 
 print(profit_by_eatery)
+
+#Analyze stock levels vs order
+stocked = stock_df.groupby('meal_id')['stocked_quantity'].sum()
+ordered = orders_df.groupby('meal_id')['order_quantity'].sum()
+
+stock_vs_orders = pd.DataFrame({
+    'stocked' : stocked,
+     'ordered' : ordered
+}).fillna(0)
+
+stock_vs_orders['leftover'] = stock_vs_orders['stocked']- stock_vs_orders['ordered']
+
+print( 'stock where leftover is negative:\n', (stock_vs_orders[stock_vs_orders['leftover']<0]))
+
+
+
+
+
