@@ -30,4 +30,8 @@ print("sample meal data:\n", meals_df.head())
 print("sample orders dara:\n", orders_df.head())
 print("sample stock data:\n", stock_df.head())
 
+#counting total unique meals and entries exists
+print("unique number of meals", meals_df["meal_id"].nunique())
+print("unique eateries:\n", meals_df['eatery'].nunique())
+
 
