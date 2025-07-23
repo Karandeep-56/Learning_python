@@ -45,4 +45,8 @@ revenue_per_meal = revenue_per_meal.merge(meals_df[['meal_id', "eatery"]], on = 
 
 print("revenue_per_meal", revenue_per_meal)
 
+#top five revenue generating meals
+print(revenue_per_meal.sort_values (by = 'order_revenue',
+ascending = False).head())
+
 
