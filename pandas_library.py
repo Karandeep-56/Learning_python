@@ -50,6 +50,11 @@ print("sorting age from a to z:\n", df.sort_values('years'))
 df.set_index('name', inplace = True)
 print("indexed data", df)
 
+#adding date column
+df['date'] = pd.to_datetime(['2023-01-01', '2023-02-01', '2023-03-01'])
+df['year']= df['date'].dt.year
+print("\n added year and date column:\n",df)
+
 
 
 
