@@ -26,6 +26,13 @@ print("row by label:\n", df.loc(0))
 print("print row by index\n", df.iloc(0))
 
 
+#filtering and conditioning selection
+print("older than 30:\n", df[df['age']>30])
+print("filter by name:\n", df[df['name']=='alice'])
+
+
+
+
 
 
 
