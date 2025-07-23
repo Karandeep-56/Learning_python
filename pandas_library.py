@@ -35,6 +35,24 @@ print("all the null values:\n", df.isnull())
 print("drop all the missing values:\n", df.dropna())
 print("fill all the missing values with 0", df.fillna(0))
 
+#renaming columns
+df.rename(columns ={'age': 'years'}, inplace = True)
+print("renamed column:\n", df.head())
+
+#data aggregation
+print("group by salary:\n", df.groupby('name')['salary'].sum())
+
+#mean salary
+print("mean of salary", df['salary'].mean())
+
+
+
+
+
+
+
+
+
 
 
 
