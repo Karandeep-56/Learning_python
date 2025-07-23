@@ -63,6 +63,11 @@ merged_df = pd.merge(df1,df2, on = 'ID')
 
 print("merged data", merged_df)
 
+#applying function
+df.reset_index(inplace = True)
+df["age plus 5 year"] = df['years'].apply(lambda x: x+5)
+print( "new data", df[['name', 'years', 'age plus 5 year']])
+
 
 
 
