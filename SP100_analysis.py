@@ -69,3 +69,10 @@ outlier_mask = pe_ratios>(mean_pe + 2 * std_pe)
 print("outliers")
 print(f"{data["Name"][outlier_mask]}")
 
+
+# 10. List top 5 companies with lowest P/E
+print("\n10. Top 5 Companies with Lowest P/E")
+sorted_indices = np.argsort(pe_ratios)
+for idx in sorted_indices[:5]:
+    print( f"{data['Name'][idx]}: {pe_ratios[idx]:.2f}")
+
