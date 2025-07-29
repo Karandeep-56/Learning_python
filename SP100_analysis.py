@@ -19,5 +19,15 @@ print(f'average price{avg_price:.2f} and EPS {avg_EPS:.2f}')
 
 
 
+# 3. Compute P/E Ratio for each company and add it to a new array
+print("P/E ratios")
+pe_ratios = data['Price']/data['EPS']
+print(pe_ratios)
+
+
+
+
+
+
 
 
