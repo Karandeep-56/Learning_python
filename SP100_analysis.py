@@ -31,4 +31,10 @@ print(f" {data['Name'][max_index]} {pe_ratios[max_index]:.2f}")
 
 
 
+#filter and print all the companies where sector is financial
+print("\n all the companies where sector is financial")
+financial = data[data['Sector']== 'Financials']
+for row in financial:
+    print(f"{row["Name"]} {row['Price']}")
+
 
