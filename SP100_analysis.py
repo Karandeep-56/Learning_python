@@ -10,3 +10,14 @@ print("all company names and sectors")
 
 for company in data:
     print(f"{company['Name']} ({company['Sector']})")
+
+#compute and print average price and EPS
+print("\naverage price and EPS")
+avg_price =  np.mean(data['Price'])
+avg_EPS =  np.mean(data['EPS'])
+print(f'average price{avg_price:.2f} and EPS {avg_EPS:.2f}')
+
+
+
+
+
