@@ -24,9 +24,10 @@ print("P/E ratios")
 pe_ratios = data['Price']/data['EPS']
 print(pe_ratios)
 
-
-
-
+#find the company with the highest P/E ratios
+print("\n4 company with highest pe ratios")
+max_index = np.argmax(pe_ratios)
+print(f" {data['Name'][max_index]} {pe_ratios[max_index]:.2f}")
 
 
 
