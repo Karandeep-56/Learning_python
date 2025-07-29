@@ -37,4 +37,8 @@ financial = data[data['Sector']== 'Financials']
 for row in financial:
     print(f"{row["Name"]} {row['Price']}")
 
-
+#count how many companies are in each sector
+print("\n6 sector counts")
+unique_sectors,counts =  np.unique(data['Sector'], return_counts = True)
+for sector, count in zip(unique_sectors,counts):
+    print(f"{sector}:{count}")
