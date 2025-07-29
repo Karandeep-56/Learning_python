@@ -16,20 +16,22 @@ fruits[2] = "strawberry"
 
 index_apple = fruits.index("apple")
 fruits[index_apple] ='watermelon'
-print(fruits)
+print( fruits)
 
 #adding something at first place
 fruits.insert(0, "lemon")
 print("adding lemon on first place",fruits)
 
+
 #removing fruit from list
 fruits.remove("banana")
 print("after removing banana", fruits)
+fruits.remove('mango')
+print('after removing mango', fruits)
 popped_fruits = fruits.pop()
 print("removing last item", popped_fruits)
 
-fruits.remove('mango')
-print('after removing mango', fruits)
+
 #sorteding and reverse sorting
 fruits.sort()
 print("sorted_fruits", fruits)
@@ -45,7 +47,7 @@ print("original list", fruits)
 #itering over a list
 print("fruits one by one:")
 for fruits in fruits:
-    print("fruit itering,", fruits)
+    print("fruit itering", fruits)
 
 print ("fruit in uppercase")
 for fruits in fruits:
@@ -55,7 +57,7 @@ fruit_length = [len(fruits) for fruits in fruits]
 print( fruit_length)
 
 # fruits list with the letter containing E
-fruit_with_e = [fruits for fruits in fruits if 'o' in fruits]
+fruit_with_e = [fruits for fruits in fruits if 'e' in fruits]
 print(fruit_with_e)
 
 #qns
@@ -294,7 +296,7 @@ print(my_into)
 
 print(list(range(0,5)))
 
-import practice_pandas_and_numpy as np
+import numpy_practices as np
 
 
 

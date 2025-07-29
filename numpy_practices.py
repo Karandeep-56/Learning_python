@@ -1,9 +1,9 @@
-import numpy as np
+
 
 #from numpy.random import exponential
 
 #from Exercises import square, squares, fruits
-
+import numpy as np
 #creating Arrays
 a = np.array([1,2,3])
 print(a)

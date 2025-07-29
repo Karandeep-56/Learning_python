@@ -2,7 +2,7 @@
 from itertools import groupby
 
 import pandas as pd
-import numpy as np
+import numpy_practices as np
 import psycopg2
 from sqlalchemy import create_engine
 
@@ -48,7 +48,7 @@ revenue_per_meal = revenue_per_meal.merge(meals_df[['meal_id', "eatery"]], on = 
 print("revenue_per_meal", revenue_per_meal)
 
 #top five revenue generating meals
-print(revenue_per_meal.sort_values (by = 'order_revenue',
+print("top five meals", revenue_per_meal.sort_values (by = 'order_revenue',
 ascending = False).head())
 
 #proft per meal
@@ -69,7 +69,7 @@ profit_by_eatery = orders_df.merge(meals_df[['meal_id', 'eatery']], on = 'meal_i
 \
 .groupby("eatery")["profit"].sum().sort_values(ascending=False).reset_index()
 
-print(profit_by_eatery)
+print("profit per eatery",profit_by_eatery)
 
 #Analyze stock levels vs order
 stocked = stock_df.groupby('meal_id')['stocked_quantity'].sum()
