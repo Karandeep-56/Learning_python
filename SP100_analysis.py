@@ -42,3 +42,10 @@ print("\n6 sector counts")
 unique_sectors,counts =  np.unique(data['Sector'], return_counts = True)
 for sector, count in zip(unique_sectors,counts):
     print(f"{sector}:{count}")
+
+#sector Wise average
+print(f"sector Wise average")
+for sector in unique_sectors:
+    mask = data['Sector']==sector
+    sector_pe = pe_ratios[mask]
+    print(f"{sector}: Average P/E {np.mean(sector_pe):.2f}")
