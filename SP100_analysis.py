@@ -76,3 +76,19 @@ sorted_indices = np.argsort(pe_ratios)
 for idx in sorted_indices[:5]:
     print( f"{data['Name'][idx]}: {pe_ratios[idx]:.2f}")
 
+    # 11. Export the original dataset with computed P/E as CSV
+
+
+ # 12. Plot sector-wise average P/E as a bar chart
+print("\n12. Sector-wise Average P/E Bar Chart")
+sector_averages = [np.mean(pe_ratios[data['Sector'] == sec]) for sec in unique_sectors] 
+plt.bar(unique_sectors, sector_averages)
+plt.xticks(rotation = 90)
+plt.ylabel("P/E ratios")
+plt.title("sector wise average p/E")
+plt.tight_layout()
+plt.show()
+
+
+
+
