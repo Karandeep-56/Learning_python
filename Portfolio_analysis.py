@@ -18,3 +18,38 @@ df = pd.DataFrame(data, index = dates)
 # Calculate % change from previous day — gives daily returns
 returns = df.pct_change()
 print("\n Daily returns\n", returns)
+
+
+# Let's say our portfolio has:
+# - 0% in AAPL
+# - 50% in AMZN
+# - 25% in TSLA
+
+weights = np.array([0, 0.50 , 0.25])
+
+#calculate mean daily return of each stock
+mean_daily_return = returns.mean()
+
+#portfolio return is average weighted returns of individual return
+portfolio_return = np.sum(mean_daily_return* weights )
+
+print("\n portfolio return (Daily average)", portfolio_return)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
