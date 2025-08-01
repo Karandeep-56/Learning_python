@@ -13,3 +13,8 @@ data = {
 }
 dates = pd.date_range('2022-01-01', periods = 4)
 df = pd.DataFrame(data, index = dates)
+
+
+# Calculate % change from previous day — gives daily returns
+returns = df.pct_change()
+print("\n Daily returns\n", returns)
