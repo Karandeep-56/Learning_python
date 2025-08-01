@@ -16,3 +16,9 @@ print(df.sort_values("P/E", ascending = False).head(10))
 print("\n2. sector wise P/E summary")
 print(df.groupby("Sector")["P/E"].agg(["mean", "median", "std", "count"]))
 
+#Number of companies per sector
+print("\n number of companies per sector")
+df["Sector"].value_counts().plot(kind="bar", title="Companies per Sector")
+plt.ylabel("Count")
+plt.tight_layout()
+plt.show()
