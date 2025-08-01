@@ -31,20 +31,24 @@ weights = np.array([0, 0.50 , 0.25])
 mean_daily_return = returns.mean()
 
 #portfolio return is average weighted returns of individual return
-portfolio_return = np.sum(mean_daily_return* weights )
+port_return = np.sum(mean_daily_return* weights )
 
-print("\n portfolio return (Daily average)", portfolio_return)
-
-
+print("\n portfolio return (Daily average)", port_return)
 
 
+#Cumulative Return (Compound over time)
+portfolio_returns = returns.copy(deep=  True)
+portfolio_returns['Portfolio']= portfolio_returns.dot(weights)
 
+#compounding the returns over time gives cumulative return
+cumulative_return = (1+ portfolio_returns).cumprod()
 
-
-
-
-
-
+#plotting cumulative return
+cumulative_return["portfolio"].plot(title = "portfolio cumulative return")
+plot.xlabel("date")
+plot.ylabel("cumulative return")
+plot.grid(True)
+plot.show()
 
 
 
