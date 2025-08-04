@@ -17,18 +17,18 @@ print("\n2. sector wise P/E summary")
 print(df.groupby("Sector")["P/E"].agg(["mean", "median", "std", "count"]))
 
 #Number of companies per sector
-df["Sector"].value_counts().plot(kind="bar", title="Companies per Sector")
-plt.ylabel("Count")
-plt.tight_layout()
-plt.show()
+# df["Sector"].value_counts().plot(kind="bar", title="Companies per Sector")
+# plt.ylabel("Count")
+# plt.tight_layout()
+# plt.show()
 
 #sector Wise Average EPS and Price (side-by-side bars)
-print("\n3 Sector Wise Average EPS and Price")
-sector_stats = df.groupby("Sector")[["Price", "EPS"]].mean().sort_values("Price")
-sector_stats.plot(kind = "bar", figsize= (10,6), title = "Sector Wise Average EPS and Price")
-plt.xlabel("Average Value")
-plt.tight_layout()
-plt.show()
+# print("\n3 Sector Wise Average EPS and Price")
+# sector_stats = df.groupby("Sector")[["Price", "EPS"]].mean().sort_values("Price")
+# sector_stats.plot(kind = "bar", figsize= (10,6), title = "Sector Wise Average EPS and Price")
+# plt.xlabel("Average Value")
+# plt.tight_layout()
+# plt.show()
 
 #highlight Outliers (P/E > Q3 + 1.5×IQR)
 print("\n4 Highlight outliers based on P/E")
@@ -43,6 +43,26 @@ print("outliers ", outliers[["Name","P/E"]])
 print("\n5 correaltion between price and EPS")
 correlation = df["Price"].corr(df["EPS"])
 print(f"correlation between price and EPS: {correlation:.2f}")
+
+# 7. Scatter Plot: EPS vs. Price Colored by Sector
+# print("\n6 Scatter Plot: EPS vs. Price Colored by Sector ")
+# plt.figure(figsize = (10,6))
+# sns.scatterplot( data = df, x = "EPS", y = "Price", hue = "Sector", palette = "Set2", s = 100)
+# plt.title("EPS vs Sector by Price")
+# plt.grid(True)
+# plt.tight_layout()
+# plt.show()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
