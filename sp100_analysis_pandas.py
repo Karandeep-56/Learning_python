@@ -39,6 +39,11 @@ upper_bound = q3 + 1.5* iqr
 outliers = df[df["P/E"]> upper_bound]
 print("outliers ", outliers[["Name","P/E"]])
 
+#correlaion between price and EPS
+print("\n5 correaltion between price and EPS")
+correlation = df["Price"].corr(df["EPS"])
+print(f"correlation between price and EPS: {correlation:.2f}")
+
 
 
 
