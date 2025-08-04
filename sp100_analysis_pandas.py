@@ -59,6 +59,39 @@ df["Growth"] = pd.cut(df["P/E"], bins = [0,10,20,30,df["P/E"].max()],
                       labels = ["undervalued", "fairly valued", "Growth", "speculative"])
 print(df[["Name", "P/E", "Growth"]].head(10))
 
+# 8. Average P/E per Sector — Sorted Bar Plot
+# print("\n8. Average P/E by Sector")
+# df.groupby("Sector")["P/E"].mean().sort_values().plot(kind = "bar", title = "average P/E by Sector", color = "teal")
+# plt.xlabel("average P/E")
+# plt.tight_layout()
+# plt.show()
+
+# 9. Boxplot of P/E Ratios by Sector
+# print("\n9. Boxplot of P/E Ratios by Sector")
+# plt.figure(figsize = (12,6))
+# sns.boxplot(data = df, x = "Sector", y = "P/E")
+# plt.xticks(rotation = 90)
+# plt.title("P//E ratios by Sector")
+# plt.tight_layout()
+# plt.show()
+
+ #10. Sector with Highest Total Market Value Proxy (Price × EPS)
+print("\n10. Sector by Total Market Value Proxy (Price × EPS)")
+df["MarketValueProxy"] = df["Price"]* df["EPS"]
+sector_mv = df.groupby("Sector")["MarketValueProxy"].mean().sort_values(ascending = False)
+print(sector_mv)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
