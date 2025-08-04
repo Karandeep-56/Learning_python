@@ -51,14 +51,14 @@ for sector in unique_sectors:
     print(f"{sector}: Average P/E {np.mean(sector_pe):.2f}")
 
 #creating a histogram fro P/E ratios
-# print("creating a histogram for P/E ratios")
-# plt.hist(pe_ratios, bins = 10 , edgecolor = 'black')
-# plt.title("distribution of P/E ratios")
-# plt.xlabel("P/E ratios")
-# plt.ylabel("frequency")
-# plt.grid(True)
-# plt.tight_layout()
-# plt.show()
+print("creating a histogram for P/E ratios")
+plt.hist(pe_ratios, bins = 10 , edgecolor = 'black')
+plt.title("distribution of P/E ratios")
+plt.xlabel("P/E ratios")
+plt.ylabel("frequency")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
 
 
 # 9. Identify outlier P/E ratios (2 std above mean)

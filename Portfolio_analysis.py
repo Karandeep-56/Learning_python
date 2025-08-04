@@ -44,14 +44,11 @@ portfolio_returns['Portfolio']= portfolio_returns.dot(weights)
 cumulative_return = (1+ portfolio_returns).cumprod()
 
 #plotting cumulative return
-cumulative_return["portfolio"].plot(title = "portfolio cumulative return")
-plot.xlabel("date")
-plot.ylabel("cumulative return")
-plot.grid(True)
-plot.show()
-
-
-
+cumulative_return["Portfolio"].plot(title = "portfolio cumulative return")
+plt.xlabel("date")
+plt.ylabel("cumulative Return")
+plt.grid(True)
+plt.show()
 
 
 
