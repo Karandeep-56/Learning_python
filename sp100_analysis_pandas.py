@@ -44,7 +44,7 @@ print("\n5 correaltion between price and EPS")
 correlation = df["Price"].corr(df["EPS"])
 print(f"correlation between price and EPS: {correlation:.2f}")
 
-# 7. Scatter Plot: EPS vs. Price Colored by Sector
+#  Scatter Plot: EPS vs. Price Colored by Sector
 # print("\n6 Scatter Plot: EPS vs. Price Colored by Sector ")
 # plt.figure(figsize = (10,6))
 # sns.scatterplot( data = df, x = "EPS", y = "Price", hue = "Sector", palette = "Set2", s = 100)
@@ -53,7 +53,11 @@ print(f"correlation between price and EPS: {correlation:.2f}")
 # plt.tight_layout()
 # plt.show()
 
-
+# 7 Create a New Column: Growth Category (based on P/E)
+print("\n7. Growth Category")
+df["Growth"] = pd.cut(df["P/E"], bins = [0,10,20,30,df["P/E"].max()],
+                      labels = ["undervalued", "fairly valued", "Growth", "speculative"])
+print(df[["Name", "P/E", "Growth"]].head(10))
 
 
 
