@@ -29,3 +29,17 @@ sector_stats.plot(kind = "bar", figsize= (10,6), title = "Sector Wise Average EP
 plt.xlabel("Average Value")
 plt.tight_layout()
 plt.show()
+
+#highlight Outliers (P/E > Q3 + 1.5×IQR)
+print("\n4 Highlight outliers based on P/E")
+q1 = df["P/E"].quantile(0.25)
+q3 = df["P/E"].quantile(.75)
+iqr = q3-q1
+upper_bound = q3 + 1.5* iqr
+outliers = df[df["P/E"]> upper_bound]
+print("outliers ", outliers[["Name","P/E"]])
+
+
+
+
+
