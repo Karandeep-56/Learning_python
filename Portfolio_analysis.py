@@ -75,15 +75,24 @@ print("Portfolio Volatility (Std Dev):", port_stddev)
 apple_price = pd.Series([105.05, 99.75], index=pd.to_datetime(['2015-01-06', '2018-03-29']))
 total_return = (apple_price.iloc[-1] - apple_price.iloc[0]) / apple_price.iloc[0]
 
-
 months = 38
 annualized_return = ((1 + total_return) ** (12 / months)) - 1
 annualized_return_3y = ((1 + total_return) ** (1 / 3)) - 1
-
-
 print("\nTotal Return:", total_return)
 print("Annualized Return (Monthly base):", annualized_return)
 print("Annualized Return (3 years):", annualized_return_3y)
+
+#SHARPE RATIO- RISK ADJUSTED RATIO
+
+# Sharpe Ratio = (Return - Risk-Free Rate) / Volatility
+apple_return = apple_price.pct_change()
+annualized_vol = apple_return.std() *np.sqrt(250)
+risk_free_rate = 0.01 #assumed
+
+sharpe_ratio = (annualized_return - risk_free_rate) / annualized_vol
+print("\nSharpe Ratio (AAPL):", sharpe_ratio)
+
+
 
 
 
