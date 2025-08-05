@@ -70,6 +70,30 @@ port_stddev = np.sqrt(port_variance)
 print("\nPortfolio Variance:", port_variance)
 print("Portfolio Volatility (Std Dev):", port_stddev)
 
+#annualized Return (Example)
+# Assume AAPL was 105.05 → 99.75 over 38 months
+apple_price = pd.Series([105.05, 99.75], index=pd.to_datetime(['2015-01-06', '2018-03-29']))
+total_return = (apple_price.iloc[-1] - apple_price.iloc[0]) / apple_price.iloc[0]
+
+
+months = 38
+annualized_return = ((1 + total_return) ** (12 / months)) - 1
+annualized_return_3y = ((1 + total_return) ** (1 / 3)) - 1
+
+
+print("\nTotal Return:", total_return)
+print("Annualized Return (Monthly base):", annualized_return)
+print("Annualized Return (3 years):", annualized_return_3y)
+
+
+
+
+
+
+
+
+
+
 
 
 
