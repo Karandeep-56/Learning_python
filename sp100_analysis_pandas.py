@@ -81,7 +81,9 @@ df["MarketValueProxy"] = df["Price"]* df["EPS"]
 sector_mv = df.groupby("Sector")["MarketValueProxy"].mean().sort_values(ascending = False)
 print(sector_mv)
 
-
+# 11. Save Enriched Dataset to New CSV
+print("\n11. Saving enriched dataset to 'sp100_enriched.csv'")
+df.to_csv("sp100_enriched.csv", index=False)
 
 
 

@@ -51,6 +51,27 @@ plt.grid(True)
 plt.show()
 
 
+# SECTION 5: RISK — VARIANCE AND VOLATILITY
+
+# Risk in finance = Uncertainty in returns
+# Variance: how far returns are from average (spread)
+# Standard deviation = square root of variance = "volatility"
+
+# Annualized Covariance matrix — how stocks move together
+cov_matrix = returns.cov() * 250
+print("\nAnnualized Covariance Matrix:\n", cov_matrix)
+#Equal Weights (1/3 Each)
+weights_eq = np.array([1/3, 1/3, 1/3])
+returns = df.pct_change()
+# Portfolio variance = W.T * CovMatrix * W
+port_variance = np.dot(weights_eq.T, np.dot(cov_matrix, weights_eq))
+port_stddev = np.sqrt(port_variance)
+
+print("\nPortfolio Variance:", port_variance)
+print("Portfolio Volatility (Std Dev):", port_stddev)
+
+
+
 
 
 
